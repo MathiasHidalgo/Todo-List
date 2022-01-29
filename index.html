@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form onsubmit="addNewTask(event)" id="newtask">
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton" id="push">+</button>
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTask()">Ordenar</button>
+            <i class="fas fa-sync" id="delete"></i>
+        </form>
+        <div id="tasksContainer"></div>
+    </div>
+
+    
+
+
+ 
+
+
+
+
+<script src="app.js"></script>
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/8c7e3bc82d.js" crossorigin="anonymous"></script>
+</body>
+</html>
